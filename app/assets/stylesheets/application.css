@@ -11,3 +11,28 @@
  *= require_self
  *= require_tree .
  */
+html{
+	font-size: 16px;
+}
+.wrapper{
+  	width:225px;
+  	height:350px;
+  	padding:10px;
+  	background: #6CC8BE;
+  	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-family: helvetica,arial,sans-serif;
+}
+.table{
+}
+.left-column{
+  	text-align: right;
+  	color:white;
+
+}
+.right-column{
+	color:black;
+}
+.Next-Bus{
+	font-size: 24px;
+}

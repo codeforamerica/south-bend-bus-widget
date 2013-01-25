@@ -1,15 +1,35 @@
 
 
-<br>
-Bus Line: <select name="route"></select>
-<br>
-Stop: <select name="stop"></select>
-<br>
-Direction: <select name="direction"></select>
-<br>
-Time: <select name="time"></select>
-<br>
-Day: <select name="day"></select>
-<br>
-
-
+<div class="wrapper">
+<div style="font-size:32px; color:white;">
+	<div>sb transpo</div>
+	<%= image_tag "bus_logo.png" %>
+</div>
+<hr style="color:white;">
+<table class="fields">
+	<tr>
+		<td class="left-column">Busline:</td>
+		<td><select name="route"></select></td>
+	</tr>
+	<tr>
+		<td class="left-column">Stop:</td>
+		<td><select name="stop"></select></td>
+	</tr>
+	<tr>
+		<td class="left-column">Direction:</td>
+		<td><select name="direction"></select></td>
+	</tr>
+	<tr>
+		<td class="left-column">Time:</td>
+		<td><select name="time"></select></td>
+	</tr>
+	<tr>
+		<td class="left-column">Day:</td>
+		<td><select name="day"></select></td>
+	</tr>
+	<tr>
+		<td class="Next-Bus left-column">Next Bus:</td>
+		<td>3:15pm</td>
+	</tr>
+</table>
+</div>
