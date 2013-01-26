@@ -2,31 +2,71 @@
 	font-family: airplane;
 	src: url('<%= asset_path('airplane.ttf') %>');   	
 }
+@font-face {
+  font-family: Graduate;
+  src: url('<%= asset_path('Graduate-Regular.ttf') %>');    
+}
+@font-face {
+  font-family: Marmellatta;
+  src: url('<%= asset_path('Marmellatta.ttf') %>');    
+}
+@font-face {
+  font-family: Franchise-Bold;
+  src: url('<%= asset_path('Franchise-Bold.ttf') %>');    
+}
 
 html{
 	font-size: 16px;
 }
 .wrapper{
-  	width:230px;
-  	height:300px;
+  	width:215px;
   	padding:10px;
   	background: #6CC8BE;
   	-moz-border-radius: 15px;
     border-radius: 15px;
-    font-family: airplane,helvetica,arial,sans-serif;
+    font-family:helvetica,arial,sans-serif;
 }
-.table{
+.title{
+  float:left; 
+  width;80px;
+  padding-right: 5px;
+  font-size:32px; 
+  color:white;
+  font-family:;
+  font-weight:;
+  letter-spacing:2px;
+  text-shadow: 1px 1px 1px gray;
+  border-bottom: thick #ff0000;
+}
+div.horizontal-line{
+    min-height: 1px;
+    clear:both; width:100%;
+    border-bottom:1px solid #d1d1d1;
+    height:1px; padding-top:5px;
+    margin-top:0px;
+    margin-bottom:5px;
+}
+.fields{
+  border-spacing: 2px;
 }
 .left-column{
   	text-align: right;
   	color:white;
-
 }
 .right-column{
 	color:black;
 }
 .Next-Bus{
-	font-size: 24px;
+	font-size: 22px;
+  vertical-align: top;
+  text-shadow: 1px 1px 1px gray;
+}
+.read-out{
+  width: 100px;
+  height: 75px;
+  background: white;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 
