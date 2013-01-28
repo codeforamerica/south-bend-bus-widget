@@ -7,8 +7,8 @@
   src: url('<%= asset_path('Graduate-Regular.ttf') %>');    
 }
 @font-face {
-  font-family: Marmellatta;
-  src: url('<%= asset_path('Marmellatta.ttf') %>');    
+  font-family: OpenSans-Bold;
+  src: url('<%= asset_path('OpenSans-Bold.ttf') %>');    
 }
 @font-face {
   font-family: Franchise-Bold;
@@ -21,7 +21,8 @@ html{
 .wrapper{
   	width:215px;
   	padding:10px;
-  	background: #6CC8BE;
+  	background-image: url('bus_wheel.jpg'); 
+    border:1px white;
   	-moz-border-radius: 15px;
     border-radius: 15px;
     font-family:helvetica,arial,sans-serif;
@@ -35,8 +36,7 @@ html{
   font-family:;
   font-weight:;
   letter-spacing:2px;
-  text-shadow: 1px 1px 1px gray;
-  border-bottom: thick #ff0000;
+  text-shadow: 1px 1px 1px black;
 }
 div.horizontal-line{
     min-height: 1px;
@@ -52,6 +52,7 @@ div.horizontal-line{
 .left-column{
   	text-align: right;
   	color:white;
+    text-shadow: 1px 1px 1px #404040;
 }
 .right-column{
 	color:black;
@@ -59,12 +60,17 @@ div.horizontal-line{
 .Next-Bus{
 	font-size: 22px;
   vertical-align: top;
-  text-shadow: 1px 1px 1px gray;
+  text-shadow: 1px 1px 1px black;
 }
-.read-out{
-  width: 100px;
+div.read-out{
+  width: 110px;
   height: 75px;
   background: white;
+  opacity:0.9;
+  filter:alpha(opacity=90); /* For IE8 and earlier */ 
+  -moz-box-shadow:    1px 1px 5px 0px gray;
+  -webkit-box-shadow: 1px 1px 5px 0px gray;
+  box-shadow:         1px 1px 5px 0px gray;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
