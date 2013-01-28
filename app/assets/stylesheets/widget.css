@@ -7,33 +7,30 @@
   src: url('<%= asset_path('Graduate-Regular.ttf') %>');    
 }
 @font-face {
-  font-family: OpenSans-Bold;
-  src: url('<%= asset_path('OpenSans-Bold.ttf') %>');    
-}
-@font-face {
   font-family: Franchise-Bold;
   src: url('<%= asset_path('Franchise-Bold.ttf') %>');    
 }
 
 html{
-	font-size: 16px;
+	font-size: 15px;
 }
 .wrapper{
   	width:215px;
   	padding:10px;
   	background-image: url('bus_wheel.jpg'); 
     border:1px white;
-  	-moz-border-radius: 15px;
-    border-radius: 15px;
+  	-moz-border-radius: 10px;
+    border-radius: 10px;
     font-family:helvetica,arial,sans-serif;
 }
 .title{
   float:left; 
   width;80px;
-  padding-right: 5px;
+  padding-right: 8px;
+  padding-left: 6px;
   font-size:32px; 
   color:white;
-  font-family:;
+  font-family:Open Sans,helvetica,arial,sans-serif;
   font-weight:;
   letter-spacing:2px;
   text-shadow: 1px 1px 1px black;
@@ -58,7 +55,8 @@ div.horizontal-line{
 	color:black;
 }
 .Next-Bus{
-	font-size: 22px;
+	font-size: 21px;
+  font-family:Open Sans, Helvetica,arial,sans-serif;
   vertical-align: top;
   text-shadow: 1px 1px 1px black;
 }
