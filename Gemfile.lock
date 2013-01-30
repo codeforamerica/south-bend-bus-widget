@@ -41,6 +41,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    google-webfonts (0.1.2)
+      actionpack (>= 3.0.0)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -112,6 +114,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  google-webfonts
   jquery-rails
   pg
   pry

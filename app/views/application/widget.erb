@@ -1,11 +1,11 @@
 
 
 <div class="wrapper">
-<div style="font-size:32px; color:white;">
-	<div>sb transpo</div>
-	<%= image_tag "bus_logo.png" %>
+<div>
+	<div class="title">TRANSPO</div>
+	<div style="padding-top:3px; padding-left:3px;"><%= image_tag "bus_logo.png" %></div>
 </div>
-<hr style="color:white;">
+<div class="horizontal-line"></div>
 <table class="fields">
 	<tr>
 		<td class="left-column">Busline:</td>
@@ -41,8 +41,10 @@
 	</tr>
 	<tr>
 		<td class="Next-Bus left-column">Next Bus:</td>
-		<td>
-			<div id="bus_times">
+		<td style="padding-top:4px;">
+			<div class="read-out">
+				<div id="bus_times">
+				</div>
 			</div>
 		</td>
 	</tr>
