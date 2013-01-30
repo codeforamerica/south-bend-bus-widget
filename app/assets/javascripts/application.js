@@ -22,18 +22,47 @@ jQuery(function($)
         var route = $('select#widget_route :selected').val();
         console.log(route);
         if(route == "") {
-          $("#widget_stops select").empty()
+          $("#widget_stop select").empty()
         }
-        else 
+        else {
           jQuery.get(
             '/get_stops/' + route,
-            function(data){ $("#stops").html(data); },
+            function(data){ 
+              $("#stops").html(data); 
+              $("#widget_stop").change(function()
+              {
+                  var stop = $('select#widget_stop :selected').val();
+                  console.log(stop);
+                  if(stops == "") {
+                    $("#bus_times").empty()
+                  }
+                  else {
+                    jQuery.get(
+                      '/get_times/' + stop,
+                      function(data){ 
+                        $("#bus_times").html(data);
+                        console.log("Data: " + data);
+                      },
+                      "html"
+                    );
+                    console.log("times placed?");
+                  }
+                return false;
+              }
+              );
+            },
             "html"
-          )
+          );
+        }
       return false;
     }
   );
 })
+
+
+
+
+
 
 
 

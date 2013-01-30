@@ -4,6 +4,7 @@ SouthBendBusWidget::Application.routes.draw do
 
   root :to => 'application#widget'
   match '/get_stops/:route_id' => "application#get_stops"
+  match '/get_times/:stop_id' => "application#get_times"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
