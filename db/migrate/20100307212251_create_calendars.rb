@@ -1,7 +1,7 @@
 class CreateCalendars < ActiveRecord::Migration
   def self.up
     create_table :calendars, :id => false do |t|
-      t.string :service_id
+      t.string :service_id, :primary_key => true
       t.boolean :monday
       t.boolean :tuesday
       t.boolean :wednesday

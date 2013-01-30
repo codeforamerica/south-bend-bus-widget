@@ -3,7 +3,7 @@ class CreateTrips < ActiveRecord::Migration
     create_table :trips, :id => false do |t|
       t.string :route_id
       t.string :service_id
-      t.string :trip_id
+      t.string :trip_id, :primary_key => true
       t.string :trip_headsign
       t.integer :block_id
       t.integer :shape_id

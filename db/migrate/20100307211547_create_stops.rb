@@ -1,7 +1,7 @@
 class CreateStops < ActiveRecord::Migration
   def self.up
     create_table :stops, :id => false do |t|
-      t.string :stop_id
+      t.string :stop_id, :primary_key => true
       t.string :stop_name
       t.string :stop_description
       t.decimal :stop_lat, :precision => 15, :scale => 9#, :null => false

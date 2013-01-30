@@ -3,6 +3,7 @@ SouthBendBusWidget::Application.routes.draw do
   # first created -> highest priority.
 
   root :to => 'application#widget'
+  match '/get_stops/:route_id' => "application#get_stops"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

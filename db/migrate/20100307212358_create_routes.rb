@@ -1,7 +1,7 @@
 class CreateRoutes < ActiveRecord::Migration
   def self.up
     create_table :routes, :id => false do |t|
-      t.string :route_id
+      t.string :route_id, :primary_key => true
       t.integer :agency_id
       t.string :route_short_name
       t.string :route_long_name

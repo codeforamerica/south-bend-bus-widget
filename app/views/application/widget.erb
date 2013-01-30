@@ -9,23 +9,35 @@
 <table class="fields">
 	<tr>
 		<td class="left-column">Busline:</td>
-		<td><select name="route"></select></td>
+		<td>
+			<%= collection_select :widget, :route, @all_routes, :route_id, :route_short_name, :input_html => {:rel => "/categories/subcategories_by_category" } %>
+		</td>
 	</tr>
 	<tr>
 		<td class="left-column">Stop:</td>
-		<td><select name="stop"></select></td>
+		<td>
+			<div id="stops">
+				<select id="widget_stop"></select>
+			</div>
+		</td>
 	</tr>
 	<tr>
 		<td class="left-column">Direction:</td>
-		<td><select name="direction"></select></td>
+		<td>
+			<select id="widget_direction"></select>
+		</td>
 	</tr>
 	<tr>
 		<td class="left-column">Time:</td>
-		<td><select name="time"></select></td>
+		<td>
+			<select id="widget_time"></select>
+		</td>
 	</tr>
 	<tr>
 		<td class="left-column">Day:</td>
-		<td><select name="day"></select></td>
+		<td>
+			<select id="widget_day"></select>
+		</td>
 	</tr>
 	<tr>
 		<td class="Next-Bus left-column">Next Bus:</td>

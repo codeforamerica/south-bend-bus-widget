@@ -13,3 +13,35 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+jQuery(function($)
+{
+  $("#widget_route").change(function()
+    {
+        var route = $('select#widget_route :selected').val();
+        console.log(route);
+        if(route == "") {
+          $("#widget_stops select").empty()
+        }
+        else 
+          jQuery.get(
+            '/get_stops/' + route,
+            function(data){ $("#stops").html(data); },
+            "html"
+          )
+      return false;
+    }
+  );
+})
+
+
+
+
+$.fn.subSelectWithAjax = function() {
+  var that = this;
+  this.change(function() {
+    $.post(that.attr('rel'), {id: that.val()}, null, "script");
+  });
+}
+
