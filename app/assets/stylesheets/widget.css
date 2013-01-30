@@ -15,9 +15,10 @@ html{
 	font-size: 15px;
 }
 .wrapper{
-  	width:215px;
+  	width:375px;
   	padding:10px;
-  	background-image: url('bus_wheel.jpg'); 
+  	background-image: url('bus_wheel.jpg');
+    background-size: 100% auto;
     border:1px white;
   	-moz-border-radius: 10px;
     border-radius: 10px;
@@ -62,7 +63,8 @@ div.horizontal-line{
 }
 div.read-out{
   width: 110px;
-  height: 75px;
+  height: 125px;
+  padding: 5px;
   background: white;
   opacity:0.9;
   filter:alpha(opacity=90); /* For IE8 and earlier */ 
